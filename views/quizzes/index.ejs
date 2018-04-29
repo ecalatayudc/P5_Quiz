@@ -5,9 +5,10 @@
 <table>
     <% for (var i in quizzes) { %>
     <% var quiz = quizzes[i]; %>
+    <% var n = +i+1;%>
     <tr>
         <td>
-           Pregunta Número <%i%> <%= quiz.question %> : <%= quiz.answer %> 
+           Pregunta Número <%=n%> = <%= quiz.question %> : <%= quiz.answer %> 
         </td>
     </tr>
     <% } %>
